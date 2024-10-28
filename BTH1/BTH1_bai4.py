@@ -27,7 +27,7 @@ def add_em(data, ma_nv, ten_nv):
 
 
 def delete_em(data, id):
-    for idx, em in enumerate(data): # tra ve 1 doi tuong ma moi phan tu cua no la 1 tuple chua 1 cap index, value
+    for idx, em in enumerate(data):  # tra ve 1 doi tuong ma moi phan tu cua no la 1 tuple chua 1 cap index, value
         if em["ma_nv"] == id:
             del data[idx]
     with open("data/em.json", mode="w", encoding='utf-8') as f:
